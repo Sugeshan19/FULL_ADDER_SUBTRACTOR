@@ -44,7 +44,12 @@ Borrow out = A'Bin + A'B + BBin
 
 **Full Adder**
 
+![half adder](https://github.com/user-attachments/assets/00a3ff8b-2890-45b9-be8f-63cf37ec220c)
 
+
+**Full Subtractor**
+
+![half subtractor](https://github.com/user-attachments/assets/dc90255a-1198-46b5-8cbc-0194c01d4a29)
 
 **Procedure**
 
@@ -63,11 +68,29 @@ For different input combinations generate the timing diagram.
 
 **Full Adder**
 
-module fulladder(a,b,c,sum,carry); input a,b,c; output sum,carry; wire w1,w2,w3; assign sum=a^b^c; assign w1=a&b; assign w2=a&b; assign w3=a&b; assign carry=w1|w2|w3; endmodule
+    module fulladder(a,b,c,sum,carry);
+    input a,b,c; 
+    output sum,carry; 
+    wire w1,w2,w3; 
+    assign sum=a^b^c;
+    assign w1=a&b; 
+    assign w2=a&b; 
+    assign w3=a&b;
+    assign carry=w1|w2|w3; 
+    endmodule
 
 **Full Subtractor**
 
-module fullsub(a,b,bin,diff,borr); input a,b,bin; output diff,borr; wire w1,w2,w3,w4,w5,w6; xor g1(diff,a,b,bin); and g2(w4,w2,b); and g3(w5,w1,b); and g4(w6,b,bin); or g5(borr,w4,w5,w6); endmodule
+    module fullsub(a,b,bin,diff,borr);
+    input a,b,bin; 
+    output diff,borr;
+    wire w1,w2,w3,w4,w5,w6; 
+    xor g1(diff,a,b,bin); 
+    and g2(w4,w2,b);
+    and g3(w5,w1,b);
+    and g4(w6,b,bin); 
+    or g5(borr,w4,w5,w6);
+    endmodule
 
 
 
