@@ -44,12 +44,12 @@ Borrow out = A'Bin + A'B + BBin
 
 **Full Adder**
 
-![half adder](https://github.com/user-attachments/assets/00a3ff8b-2890-45b9-be8f-63cf37ec220c)
+![full adder](https://github.com/user-attachments/assets/6ce728c8-2f1e-4679-b730-a53fe3497346)
 
 
 **Full Subtractor**
 
-![half subtractor](https://github.com/user-attachments/assets/dc90255a-1198-46b5-8cbc-0194c01d4a29)
+![full subtractor](https://github.com/user-attachments/assets/5ba4d1e8-a236-4641-b166-e31c9813c48f)
 
 **Procedure**
 
